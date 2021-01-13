@@ -1,0 +1,5 @@
+npm install -g @vue/cli = instaling vue cli
+vue create project-name = create vue project
+vue version =  Babel, Router, Vuex, Linter
+
+
