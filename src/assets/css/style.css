@@ -1,0 +1,45 @@
+*{
+    color: #fff;
+}
+
+.custom-bg-dark {
+    background-color: #373f46;
+}
+
+nav.navbar {
+    height: 6rem;
+}
+
+a.navbar-brand {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+li.nav-item a {
+    text-transform: uppercase;
+}
+
+#app-container {
+    top: 96px;
+    bottom: 96px;
+    position: fixed;
+    width: 100%;
+    padding: 2rem;
+    left: 0;
+    background-color: #1d2733;
+    overflow: auto;
+}
+
+@media screen and (max-width: 767px)  {
+    div#navbarCollapse {
+        width: 100%;
+        position: fixed;
+        top: 75px;
+        left: 0;
+        padding-left: 28px;
+        padding-bottom: 5px;
+        background-color: #373f46;
+
+    }
+}
+

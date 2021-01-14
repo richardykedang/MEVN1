@@ -1,5 +1,7 @@
 npm install -g @vue/cli = instaling vue cli
 vue create project-name = create vue project
 vue version =  Babel, Router, Vuex, Linter
-
+npm run serve = run vue project
+npm install bootstrap --save = boostrap package
+npm install jquery popper.js --save = boostrap package
 
