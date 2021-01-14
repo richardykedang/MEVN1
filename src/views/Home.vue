@@ -1,7 +1,7 @@
 <template>
-
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-
+    <div id="custom-home">
+      <HelloWorld msg="Welcome to Your Vue.js App"/>
+    </div>
 </template>
 
 <script>
