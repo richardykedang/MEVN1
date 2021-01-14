@@ -2,9 +2,10 @@
   <div id="app">
     <!-- import navbar component -->
     <Navbar/>
-      <div id="app-container">
-        <router-view/>
-      </div>
+    <div id="app-container">
+      <router-view/>
+    </div>
+    <Footer/>
   </div>
   
 </template>

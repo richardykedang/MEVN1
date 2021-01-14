@@ -5,3 +5,4 @@ npm run serve = run vue project
 npm install bootstrap --save = boostrap package
 npm install jquery popper.js --save = boostrap package
 
+issued on visual studio code = https://stackoverflow.com/questions/30884131/remove-trailing-spaces-automatically-or-with-a-shortcut

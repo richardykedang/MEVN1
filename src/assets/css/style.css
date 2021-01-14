@@ -3,7 +3,7 @@
 }
 
 .custom-bg-dark {
-    background-color: #373f46;
+    background-color: #373f46 !important;
 }
 
 nav.navbar {
@@ -28,6 +28,18 @@ li.nav-item a {
     left: 0;
     background-color: #1d2733;
     overflow: auto;
+}
+
+footer#custom-footer {
+    height: 6rem;
+    font-size: 1rem;
+    position: fixed;
+    background-color: #373f46;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 767px)  {
