@@ -5,7 +5,9 @@
     <hr class="my-4">
     <p>Clik below to begin manager task user.</p>
     <p class="lead">
-      <a class="btn btn-success btn-lg" href="#" role="button">View Task</a>
+      <router-link to="/task" class="btn btn-success btn-lg">
+        View Task
+      </router-link>
     </p>
   </div>
 </template>
