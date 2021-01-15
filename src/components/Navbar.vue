@@ -10,22 +10,22 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <router-link to="/" class="nav-link">
+                <router-link to="/" class="nav-link" exact>
                     Home
                 </router-link>
             </li>
             <li class="nav-item">
-                <router-link to="/task" class="nav-link">
+                <router-link to="/task" class="nav-link" exact>
                     Task
                 </router-link>
             </li>
             <li class="nav-item">
-                <router-link to="/register" class="nav-link">
+                <router-link to="/register" class="nav-link" exact>
                     Register
                 </router-link>
             </li>
             <li class="nav-item">
-                <router-link to="/login" class="nav-link">
+                <router-link to="/login" class="nav-link" exact>
                     Login
                 </router-link>
             </li>
