@@ -7,7 +7,7 @@
     </div>
     <Footer/>
   </div>
-  
+
 </template>
 
 <style>
@@ -25,4 +25,3 @@ export default {
   }
 }
 </script>
-
