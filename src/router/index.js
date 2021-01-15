@@ -6,6 +6,8 @@ import TaskAll from '../views/task/TaskAll.vue'
 import TaskCreate from '../views/task/TaskCreate.vue'
 import TaskEdit from '../views/task/TaskEdit.vue'
 
+const Islogin = false
+
 const routes = [
   {
     path: '/',
@@ -15,27 +17,62 @@ const routes = [
   {
     path: '/task/new',
     name: 'task-create',
-    component: TaskCreate
+    component: TaskCreate,
+    beforeEnter: (toolbar, from, next) => {
+      if (Islogin) {
+        next()
+      } else {
+        next('/login')
+      }
+    }
   },
   {
     path: '/task/:id',
     name: 'task-edit',
-    component: TaskEdit
+    component: TaskEdit,
+    beforeEnter: (toolbar, from, next) => {
+      if (Islogin) {
+        next()
+      } else {
+        next('/login')
+      }
+    }
   },
   {
     path: '/task',
     name: 'task-all',
-    component: TaskAll
+    component: TaskAll,
+    beforeEnter: (toolbar, from, next) => {
+      if (Islogin) {
+        next()
+      } else {
+        next('/login')
+      }
+    }
   },
   {
     path: '/register',
     name: 'register',
-    component: Register
+    component: Register,
+    beforeEnter: (toolbar, from, next) => {
+      if (!Islogin) {
+        next()
+      } else {
+        next('/')
+      }
+    }
   },
   {
     path: '/login',
     name: 'login',
-    component: Login
+    component: Login,
+    beforeEnter: (toolbar, from, next) => {
+      if (!Islogin) {
+        next()
+      } else {
+        next('/')
+      }
+    }
   },
   {
     path: '/about',
@@ -49,6 +86,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
+  linkActiveClass: 'active',
   routes
 })
 
