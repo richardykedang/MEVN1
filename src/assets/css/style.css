@@ -62,6 +62,14 @@ div#custom-home {
     color: #3da978 !important;
 }
 
+form.custom-form {
+    max-width: 40rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 767px)  {
     div#navbarCollapse {
         width: 100%;
